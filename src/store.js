@@ -1,5 +1,5 @@
-import { create } from "zustand"
-import { persist } from "zustand/middleware"
+import { create } from "zustand";
+import { persist } from "zustand/middleware";
 const useStore = create(
   persist(
     () => ({
@@ -10,7 +10,7 @@ const useStore = create(
       showBackground: true,
       language: "plaintext",
       autoDetectLanguage: false,
-      fontSize: 18,
+      fontSize: 16,
       fontStyle: "jetBrainsMono",
       padding: 64,
     }),
@@ -18,5 +18,5 @@ const useStore = create(
       name: "user-preferences",
     }
   )
-)
-export default useStore
+);
+export default useStore;
